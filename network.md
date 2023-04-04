@@ -22,6 +22,18 @@
   - truncs are used to encapsulate all vlans on a single port on a switch - recieving switch strips away and sends packet to appropriate vlan
   - arp header-- string of hex 
   - ![image](https://user-images.githubusercontent.com/126014616/229802802-7364c263-f878-420f-afcc-f12073555522.png)
+ #### Layer 2 switching technologies
+  - fast forward - only destination mac
+  - fragment free - first 64 bytes
+  - store and forward - entire frame and fcs
+  - Q-in-Q - 2 vlan tags has tag 0x88a8 (standard double tag) or 0x9100 (non standard double tag) --- attackable using double tags
+  - STP (spanning tree protocol) --  ![image](https://user-images.githubusercontent.com/126014616/229817793-04b1fe71-d4c6-4d19-89cb-796cc0282fc5.png)
+  - cdp/fdp/lldp (all proprietary to company)
+  - ![DTP_Chart](https://user-images.githubusercontent.com/126014616/229817932-2f472f68-9980-4403-b43e-b0218db539c4.png)
+  - vtp (vlan trunking protocol) automates vlan for all switches
+  - switches have port security --- assign mac address to ports-- runs check on all attempted connection to a port -- if unknown mac port can shutdown/restrict/protect 
+ 
+
 ### Network Layer(3)
  #### Ipv4
  - ![IPv4_Header](https://user-imgoogle.com/search?q=-+!%5BIPv4_Header%5D(ages.githubusercontent.com/126014616/229803046-3318b3a7-07c5-467f-82fd-b73a69c2d2df.png)
@@ -40,5 +52,13 @@
  - type/code (byte 0 and 1 ) tells us the type (ex. ping)
  - iana.org
  - zero config --- default config for any device if you dont change anything
- - 
+ #### Layer 3 routing technology
+  - ![image](https://user-images.githubusercontent.com/126014616/229819334-1960a685-4fa1-4e75-bc74-cf85a4c9402a.png)
+  - ![image](https://user-images.githubusercontent.com/126014616/229821180-465c09fb-7e93-4d56-b91f-3ef03cd34529.png)
+  - routing -- used to move packets not used by users
+  - routed -- user based applications that are done on the device 
+  - dynamic routing 
+  - ![Dynamic_Routing](https://user-images.githubusercontent.com/126014616/229823601-09289269-7c35-49b0-9070-eddfccc727eb.jpg)
+  - ![Routing Protocol Comparison](https://user-images.githubusercontent.com/126014616/229824994-c520f271-f3c4-4638-bf1d-acf43dc073a5.png)
+
 

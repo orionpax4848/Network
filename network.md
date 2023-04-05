@@ -60,6 +60,22 @@
   - dynamic routing 
   - ![Dynamic_Routing](https://user-images.githubusercontent.com/126014616/229823601-09289269-7c35-49b0-9070-eddfccc727eb.jpg)
   - ![Routing Protocol Comparison](https://user-images.githubusercontent.com/126014616/229824994-c520f271-f3c4-4638-bf1d-acf43dc073a5.png)
+  
+### Transport Layer (4)
+  - TCP/UDP
+  - identify traffic through port (ex. 22,23,443)
+  #### TCP 
+  - reliable, has tcp fla byte for handshake
+  - cwr,ece,urg,ack,psh,rst,syb,fin "Collection of Exceptionally Unskilled Attackers Pester Real Security Folks"
+  - ![TCPHeader](https://user-images.githubusercontent.com/126014616/230082054-343ed444-dcca-4641-94d9-429a5d728282.png)
+  - ![TCPchart](https://user-images.githubusercontent.com/126014616/230082085-95367a84-0f53-40bb-95e3-cf231585e6e8.png)
+  #### UDP 
+  - connectionless, quick,fast,non-reliable
+  - ![UDPHeader](https://user-images.githubusercontent.com/126014616/230082748-7be849d8-402a-465f-9cd0-16c0cd5dca27.png)
+ ### Session Layer (5)
+  - Maintains connection
+  - SOCKS,NetBIOS,PPTP/L2TP,RPC
+  - Uses proxy to maintain connections
   - 
 
 

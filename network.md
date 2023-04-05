@@ -1,3 +1,7 @@
+http://networking-ctfd-1.server.vta:8000/challenges
+ssh student@10.50.38.54 -X
+password
+student18
 # Networking
 ## Mathmatics
  - All networking is all done using binary mathmatics
@@ -89,4 +93,7 @@
  - ssh 22 -- client server protocol 
  - uses asymetric(initial connection)/semetric(data) exchanges 
  - supports data stream channeling
- - 
+ ## Traffic Sniffing
+ ### Capture Library
+  - libpcap,winpcap,npcap
+  - 

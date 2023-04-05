@@ -51,7 +51,7 @@
  - most common is ping
  - type/code (byte 0 and 1 ) tells us the type (ex. ping)
  - iana.org
- - zero config --- default config for any device if you dont change anything
+ - zero config --- default config for any device if you dont change anything apipa/slack
  #### Layer 3 routing technology
   - ![image](https://user-images.githubusercontent.com/126014616/229819334-1960a685-4fa1-4e75-bc74-cf85a4c9402a.png)
   - ![image](https://user-images.githubusercontent.com/126014616/229821180-465c09fb-7e93-4d56-b91f-3ef03cd34529.png)
@@ -76,6 +76,17 @@
   - Maintains connection
   - SOCKS,NetBIOS,PPTP/L2TP,RPC
   - Uses proxy to maintain connections
-  - 
-
-
+ ### Presentation Layer (6)
+ - traslates code into human readable 
+ - translation,formating,encoding,encryption,compression
+ ### Application Layer (7)
+ - user seen layer
+ - ftp  20/21 -- active/passive mode 
+ - ![ftp_active](https://user-images.githubusercontent.com/126014616/230085838-96b9aacd-1a80-43ab-b250-9f1ba17ff12e.png)
+ - active mode can be messed up from tunneling/firewals/NAT;s 
+ - ![ftp_passive](https://user-images.githubusercontent.com/126014616/230086332-c15e5bf9-67ee-4241-87c9-d2f47d4ad688.png)
+ - passive mode fixes old problems
+ - ssh 22 -- client server protocol 
+ - uses asymetric(initial connection)/semetric(data) exchanges 
+ - supports data stream channeling
+ - 

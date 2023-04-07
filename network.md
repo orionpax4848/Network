@@ -95,5 +95,10 @@ student18
  - supports data stream channeling
  ## Traffic Sniffing
  ### Capture Library
-  - libpcap,winpcap,npcap
-  - 
+   - libpcap,winpcap,npcap
+## Packet Creation/Socket Programming
+ ### Sockets
+ - Stream Sockets - Connection oriented and sequenced; methods for connection establishment and tear-down. Used with TCP, SCTP, and Bluetooth
+ - Datagram Sockets - Connectionless; designed for quickly sending and receiving data. Used with UDP.
+ - Raw Sockets - Direct sending and receiving of IP packets without automatic protocol-specific formatting. --- KERNEL SPACE
+ - 

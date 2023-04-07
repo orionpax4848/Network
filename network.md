@@ -101,4 +101,59 @@ student18
  - Stream Sockets - Connection oriented and sequenced; methods for connection establishment and tear-down. Used with TCP, SCTP, and Bluetooth
  - Datagram Sockets - Connectionless; designed for quickly sending and receiving data. Used with UDP.
  - Raw Sockets - Direct sending and receiving of IP packets without automatic protocol-specific formatting. --- KERNEL SPACE
- - 
+# Network Reconnaissance
+- network recon
+  - active
+  - passive
+    - lowrisk
+    - not straight forward
+    - more time consuming
+    - identificaton info
+      - ip addresses and sub-domains
+      - external and 3rd party sites
+      - people and tech
+      - contact of interest
+      - Vulnerabilities
+    - tools
+      - WHOIS queries
+      - job site listings
+      - phone numbers
+      - google seraches
+      - passive os finger printing
+    - passive external
+      - Information gathered outside of the network using passive methods
+      - Allows for more efficient attacks and plans
+      - DNS
+        - resolves hostname to ip addresses
+        - RFC 3912
+      - dig
+        - Typically between primary and secondary DNS servers
+        - If allowed to transfer externally hostnames, IPs, and IP blocks can be determined
+      - zone transfers
+        - returns DNS info
+        - supplements base queries
+     #### NETWORK SCANNING
+     - Scanning Approach
+       - Aim
+          - Wide range target scan
+          - Target specific scan
+       - Method
+          - Single source scan
+          - Distributed scan
+          -Broadcast Ping and Ping sweep
+       - ARP scan
+       - SYN scan
+       - Full connect scan
+       - Null scan
+       - FIN scan
+       - XMAS tree scan
+       - UDP scan
+       - ACK/Window scan
+       - RPC scan
+       - FTP scan
+       - decoy scan
+       - OS fingerprinting scan
+       - version scan
+       - Protocol ping
+       - Discovery probes
+       - ![image](https://user-images.githubusercontent.com/126014616/230615009-e49010de-470b-49cc-af32-bff074cec97c.png)

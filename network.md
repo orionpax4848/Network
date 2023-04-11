@@ -177,5 +177,15 @@ student18
       - add ftp to ssh 
       - interactive terminal
    - SCP
-
+      (see slides..)
+      
+   ## Traffic Redirection
+   - using tools 
+      - netcat
+         - swiss army knife 
+         ```
+         listener (recieve file) nc 10.2.0.2 9001 > newfile.txt
+         client(sends file) nc 10.2.0.2 9001 < file.txt 
+         ```
+         
 

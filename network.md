@@ -157,5 +157,25 @@ student18
        - Protocol ping
        - Discovery probes
        - ![image](https://user-images.githubusercontent.com/126014616/230615009-e49010de-470b-49cc-af32-bff074cec97c.png)
+  ## DATA TRANSFER
+   - TFTP
+     - UDP 
+     - small and simple communication
+     - no terminal communication
+     - not secure (no authentication/encyption)
+   - FTP
+      - ACTIVE
+           - TCP
+           - authenticates through clear text sign in
+           - insecure 
+           - has anonymous account
+      - PASSIVE
+      
+   - SFTP
+      - TCO 
+      - uses symmetric/assymetric encryption
+      - add ftp to ssh 
+      - interactive terminal
+   - SCP
 
 

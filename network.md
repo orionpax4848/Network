@@ -215,13 +215,13 @@ student18
          HostName vim 10.50.38.54
          User student
          Port 2
-         ForwardX11 yeS
-        ssh-keygen -t ed25519
-        ssh-copy-id
-        vim .bash_aliases
-        alias ihost='ssh ihost terminator&'
-        ihost
+         ForwardX11 yes
+         ssh-keygen -t ed25519
+         ssh-copy-id
+         vim .bash_aliases
+         alias ihost='ssh ihost terminator&'
+         ihost
         
-        ```
+         ```
 
 

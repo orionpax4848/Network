@@ -211,13 +211,11 @@ student18
      
          ```
          vim .ssh/config
-      ""   
          Host ihost
          HostName vim 10.50.38.54
          User student
          Port 2
-         ForwardX11 yes
-      ""
+         ForwardX11 yeS
         ssh-keygen -t ed25519
         ssh-copy-id
         vim .bash_aliases

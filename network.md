@@ -207,7 +207,7 @@ student18
      
      
      
-     ##ssh tunneling alias
+     ## ssh tunneling alias
      
          ```
          vim .ssh/config

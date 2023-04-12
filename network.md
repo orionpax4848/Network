@@ -186,6 +186,21 @@ student18
          ```
          listener (recieve file) nc 10.2.0.2 9001 > newfile.txt
          client(sends file) nc 10.2.0.2 9001 < file.txt 
+         
+         # on client relay
+         mknod mypipe p
+         nc 10.1.0.2 9002 0< mypipe | nc 10.2.0.2 9001 1> mypipe
+         
+         
+         # on listener2( sends info)
+         nc -l -p 9002 < infile.txt
+         
+         #on listener1(recieves info
+         nc -l -p > outfile.txt
+         
+         #if nc is not on box
+         cat file.txt > /dev/tcp/10.2.0.2/1111
          ```
          
+     
 

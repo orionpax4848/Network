@@ -204,10 +204,28 @@ student18
      
      
      
-     
-     
-     
-     ## ssh tunneling alias
+# Tunneling
+ ### ssh
+  - ssh -p <optional alt port> <user>@<pivot ip> -L <local bind port>:<tgt ip>:<tgt port>  
+ 
+  - ssh student@172.16.1.15 -L 1111:172.16.40.10:22 -NT
+  - ssh student@localhost -p 1111 -L 2222:172.16.82.106:80 -NT
+  - firefox localhost:2222
+  - ssh -p 111 mike@localhost -D 9050 (on box before target to scan/use tools on target)
+
+  - REVERSE 
+  - IH> telnet localhost 1116 
+  - Clarence> ssh jim@jim-ip -R 1199:localhost:22
+  - IH> ssh -p 1115 jim@localhost -L 1117:localhost:1119
+  - IH> ssh -p 1117 clarence@localhost
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     # ssh tunneling alias
      
          ```
          vim .ssh/config

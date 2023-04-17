@@ -210,7 +210,7 @@ student18
  - fsd
  
 ### Filtering Devices, Mechanisms
- - ![image](https://user-images.githubusercontent.com/126014616/232497046-e9cf5a7c-547f-4166-ba64-d80e02d31611.png
+ - ![image](https://user-images.githubusercontent.com/126014616/232497046-e9cf5a7c-547f-4166-ba64-d80e02d31611.png)
  - 
 
 # Tunneling

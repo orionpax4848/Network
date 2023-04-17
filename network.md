@@ -1,4 +1,4 @@
-http://networking-ctfd-1.server.vta:8000/challenges
+thttp://networking-ctfd-1.server.vta:8000/challenges
 ssh student@10.50.38.54 -X
 password
 student18
@@ -202,7 +202,12 @@ student18
          cat file.txt > /dev/tcp/10.2.0.2/1111
          ```
      
-     
+# Network Analysis
+ ## Fingrprinting and host Identifications
+    - P0f /etc/p0f/p0f.fp
+    - looks at ttl, fragmentation, ip header, window size, and tcp options
+    
+ - fsd
      
 # Tunneling
  ### ssh
@@ -218,14 +223,8 @@ student18
   - Clarence> ssh jim@jim-ip -R 1199:localhost:22
   - IH> ssh -p 1115 jim@localhost -L 1117:localhost:1119
   - IH> ssh -p 1117 clarence@localhost
- 
- 
- 
- 
- 
- 
- 
-     # ssh tunneling alias
+
+ # Ssh tunneling alias
      
          ```
          vim .ssh/config
@@ -240,6 +239,4 @@ student18
          alias ihost='ssh ihost terminator&'
          ihost
         
-         ```
-
-
+         

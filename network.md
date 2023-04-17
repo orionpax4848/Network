@@ -208,7 +208,11 @@ student18
     - looks at ttl, fragmentation, ip header, window size, and tcp options
     
  - fsd
-     
+ 
+### Filtering Devices, Mechanisms
+ - ![image](https://user-images.githubusercontent.com/126014616/232497046-e9cf5a7c-547f-4166-ba64-d80e02d31611.png
+ - 
+
 # Tunneling
  ### ssh
   - ssh -p <optional alt port> <user>@<pivot ip> -L <local bind port>:<tgt ip>:<tgt port>  
@@ -224,6 +228,9 @@ student18
   - IH> ssh -p 1115 jim@localhost -L 1117:localhost:1119
   - IH> ssh -p 1117 clarence@localhost
 
+         
+
+ 
  # Ssh tunneling alias
      
          ```
@@ -238,8 +245,4 @@ student18
          vim .bash_aliases
          alias ihost='ssh ihost terminator&'
          ihost
- # Filtering Devices, Mechanisms
-  - ![image](https://user-images.githubusercontent.com/126014616/232497046-e9cf5a7c-547f-4166-ba64-d80e02d31611.png)
- - 
-
-         
+         ``` 

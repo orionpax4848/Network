@@ -209,8 +209,13 @@ student18
     
  - fsd
  
-### Filtering Devices, Mechanisms
+# Filtering Devices, Mechanisms
  - ![image](https://user-images.githubusercontent.com/126014616/232497046-e9cf5a7c-547f-4166-ba64-d80e02d31611.png)
+ ## Whitelist
+  - If not on list, denied access  (considered more restrictive)
+ ## Blacklist
+  - denied access only to whats on list (considered less restrictive)
+ - ![image](https://user-images.githubusercontent.com/126014616/232517643-844eacfb-a9ac-4044-b73c-f13fd229cb9d.png)
  - 
 
 # Tunneling
@@ -246,3 +251,25 @@ student18
          alias ihost='ssh ihost terminator&'
          ihost
          ``` 
+ 
+ 
+``` 
+sudo nft add chain ip CCTC  input { type filter hook input priority 0 \; policy accept \; }
+sudo nft add chain ip CCTC output { type filter hook output priority 0 \; policy accept \; }
+sudo nft insert rule ip CCTC input tcp dport {22, 23, 80, 3389} ct state {new, established} accept
+sudo nft insert rule ip CCTC input tcp sport {22, 23, 80, 3389} ct state {new, established} accept
+sudo nft insert rule ip CCTC output tcp dport {22, 23, 80, 3389} ct state {new, established} accept
+sudo nft insert rule ip CCTC output tcp sport {22, 23, 80, 3389} ct state {new, established} accept
+sudo nft insert rule ip CCTC input saddr 10.10.0.40 icmp type {echo-reply, echo-request} accept
+sudo nft insert rule ip CCTC output dadd 10.10.0.40 icmp type { echo-repy, echo-request} accp
+sudo nft insert rule ip CCTC input tcp dport {5050, 5150} ct state {new, established} accept
+sudo nft insert rule ip CCTC input tcp sport {5050, 5150} ct state {new, established} accept
+sudo nft insert rule ip CCTC input udp sport {5050, 5150} ct state {new, established} accept
+sudo nft insert rule ip CCTC input udp dport {5050, 5150} ct state {new, established} accept
+sudo nft insert rule ip CCTC output tcp dport {5050, 5150} ct state {new, established} accept
+sudo nft insert rule ip CCTC output udp dport {5050, 5150} ct state {new, established} accept
+sudo nft insert rule ip CCTC output tcp sport {5050, 5150} ct state {new, established} accept
+sudo nft insert rule ip CCTC output udp dport {5050, 5150} ct state {new, established} accept
+sudo nft add chain ip CCTC  input { type filter hook input priority 0 \; policy drop \; }
+sudo nft add chain ip CCTC output { type filter hook output priority 0 \; policy drop \; }
+ ```

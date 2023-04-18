@@ -273,3 +273,7 @@ sudo nft insert rule ip CCTC output udp dport {5050, 5150} ct state {new, establ
 sudo nft add chain ip CCTC  input { type filter hook input priority 0 \; policy drop \; }
 sudo nft add chain ip CCTC output { type filter hook output priority 0 \; policy drop \; }
  ```
+ 
+ 
+ - standard acl goes closest to destinationn
+ - extended acl goes closesnt to sources 
